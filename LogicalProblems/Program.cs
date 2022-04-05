@@ -11,12 +11,15 @@ namespace LogicalProblems
         static void Main(string[] args)
         {
             Console.WriteLine("Choose the program");
-            Console.WriteLine("\n 1. Fibonacci Series \n");
+            Console.WriteLine("\n 1. Fibonacci Series \n 2. Perfect Number \n");
             int programNum = Convert.ToInt32(Console.ReadLine());
             switch (programNum)
             {
                 case 1:
                     FibonacciSeries.GetFibonacciSeries();
+                    break;
+                case 2:
+                    PerfectNumber.CheckPerfectNumber();
                     break;
                 default:
                     Console.WriteLine("Please choose the correct ProgramNum");
