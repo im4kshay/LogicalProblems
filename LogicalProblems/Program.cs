@@ -11,7 +11,7 @@ namespace LogicalProblems
         static void Main(string[] args)
         {
             Console.WriteLine("Choose the program");
-            Console.WriteLine("\n 1. Fibonacci Series \n 2. Perfect Number \n 3. Prime Number \n");
+            Console.WriteLine("\n 1. Fibonacci Series \n 2. Perfect Number \n 3. Prime Number \n 4. Reverse Number \n");
             int programNum = Convert.ToInt32(Console.ReadLine());
             switch (programNum)
             {
@@ -23,6 +23,9 @@ namespace LogicalProblems
                     break;
                 case 3:
                     PrimeNumber.GetPrimeNumbers();
+                    break;
+                case 4:
+                    ReverseNumber.GetReverseNumber();
                     break;
                 default:
                     Console.WriteLine("Please choose the correct ProgramNum");
